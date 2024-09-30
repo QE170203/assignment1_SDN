@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json());
 // Use the defined routes for quizzes and questions
 app.use('/quizzes', quizRoutes);
-app.use('/question', questionRoutes);
+app.use('/questions', questionRoutes);
 
 // Define the port for the server (environment variable or default to 3000)
 const PORT = process.env.PORT || 3000;
